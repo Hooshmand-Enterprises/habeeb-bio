@@ -50,18 +50,43 @@ export class TimelineCard extends LitElement {
   }
 
   yearsBetween(start: string, end: string | null): number {
-    let date1 = new Date(start.split(' ').join('1, '));
-    let date2 = end ? new Date(end.split(' ').join('1, ')) : new Date();
+    let date1;
+    let date2;
 
-    let yearsDiff = date2.getFullYear() - date1.getFullYear();
+    if (isNaN(Date.parse(start))) {
+      date1 = new Date(start.split(' ').join('1, '));
+    } else {
+      date1 = new Date(start);
+    }
+
+    if (end && isNaN(Date.parse(end))) {
+      date2 = new Date(end.split(' ').join('1, '));
+    } else {
+      date2 = end ? new Date(end) : new Date();
+    }
+
+    const yearsDiff = date2.getFullYear() - date1.getFullYear();
     return yearsDiff;
   }
 
   monthsBetween(start: string, end: string | null): number {
-    let date1 = new Date(start.split(' ').join('1, '));
-    let date2 = end ? new Date(end.split(' ').join('1, ')) : new Date();
-    let years = this.yearsBetween(start, end);
-    let months = years * 12 + (date2.getMonth() - date1.getMonth());
+    let date1;
+    let date2;
+
+    if (isNaN(Date.parse(start))) {
+      date1 = new Date(start.split(' ').join('1, '));
+    } else {
+      date1 = new Date(start);
+    }
+
+    if (end && isNaN(Date.parse(end))) {
+      date2 = new Date(end.split(' ').join('1, '));
+    } else {
+      date2 = end ? new Date(end) : new Date();
+    }
+
+    const years = this.yearsBetween(start, end);
+    const months = years * 12 + (date2.getMonth() - date1.getMonth());
     return months;
   }
 }
