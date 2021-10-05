@@ -50,15 +50,16 @@ export class TimelineCard extends LitElement {
   }
 
   yearsBetween(start: string, end: string | null): number {
-    let date1 = new Date(start);
-    let date2 = end ? new Date(end) : new Date();
+    let date1 = new Date(start.split(' ').join('1, '));
+    let date2 = end ? new Date(end.split(' ').join('1, ')) : new Date();
+
     let yearsDiff = date2.getFullYear() - date1.getFullYear();
     return yearsDiff;
   }
 
   monthsBetween(start: string, end: string | null): number {
-    let date1 = new Date(start);
-    let date2 = end ? new Date(end) : new Date();
+    let date1 = new Date(start.split(' ').join('1, '));
+    let date2 = end ? new Date(end.split(' ').join('1, ')) : new Date();
     let years = this.yearsBetween(start, end);
     let months = years * 12 + (date2.getMonth() - date1.getMonth());
     return months;
