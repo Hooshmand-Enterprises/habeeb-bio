@@ -34,7 +34,10 @@ export default {
     ...config.plugins,
     typescript(),
     copy({
-      targets: [{ src: 'src/assets/*', dest: 'dist/assets/' }],
+      targets: [
+        { src: 'src/assets/*', dest: 'dist/assets/' },
+        { src: 'src/robots.txt', dest: 'dist/' },
+      ],
     }),
   ],
 };
