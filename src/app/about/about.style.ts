@@ -27,4 +27,14 @@ export const aboutStyle = css`
   p {
     font-size: 1.5rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    section {
+      flex-flow: column-reverse wrap;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
 `;

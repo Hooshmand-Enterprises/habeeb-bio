@@ -58,11 +58,7 @@ export class About extends LitElement {
             >
           </p>
         </div>
-        <img
-          src="assets/img/habeeb.webp"
-          alt="Habeeb Hooshmand (me)"
-          class="drop-shadow"
-        />
+        <img src="assets/img/habeeb.webp" alt="Habeeb Hooshmand (me)" />
       </section>
     `;
   }

@@ -24,7 +24,6 @@ export class App extends ScopedElementsMixin(LitElement) {
           <h1 class="title">Habeeb Hooshmand</h1>
         </section>
         <section>
-          <h2>About me</h2>
           <habeeb-about></habeeb-about>
         </section>
         <section>
