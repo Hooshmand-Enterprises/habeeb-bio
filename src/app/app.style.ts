@@ -6,7 +6,8 @@ export const appStyle = css`
     max-width: 1080px;
   }
 
-  .title {
+  article > section {
     margin-top: 1em;
+    margin-bottom: 1em;
   }
 `;

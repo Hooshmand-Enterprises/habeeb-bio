@@ -3,7 +3,6 @@ import { html, LitElement } from 'lit';
 import { Job } from '../../shared/interfaces/job.interface';
 import { TimelineCard } from '../timeline-card/timeline-card.component';
 import { timelineStyle } from './timeline.style';
-import { classMap } from 'lit/directives/class-map';
 import { career } from '../../shared/constants/career.constant';
 
 export class Timeline extends ScopedElementsMixin(LitElement) {
