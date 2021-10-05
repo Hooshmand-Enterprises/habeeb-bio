@@ -5,8 +5,8 @@ import typescript from '@rollup/plugin-typescript';
 const config = createSpaConfig({
   outputDir: 'dist',
   developmentMode: process.env.ROLLUP_WATCH === 'true',
-  injectServiceWorker: false, // TODO: Make this true before release.
-  legacyBuild: true
+  injectServiceWorker: true,
+  legacyBuild: true,
 });
 
 export default {
@@ -19,7 +19,7 @@ export default {
       chunkFileNames: '[name]-[hash].js',
       assetFileNames: '[name]-[hash][extname[',
       format: 'es',
-      dir: 'dist'
+      dir: 'dist',
     },
     {
       ...config.output[1],
@@ -27,14 +27,14 @@ export default {
       chunkFileNames: 'nomodule-[name]-[hash].js',
       assetFileNames: 'nomodule-[name]-[hash][extname[',
       format: 'es',
-      dir: 'dist'
-    }
+      dir: 'dist',
+    },
   ],
   plugins: [
     ...config.plugins,
     typescript(),
     copy({
-      targets: [{ src: 'src/assets/*', dest: 'dist/assets/' }]
-    })
-  ]
+      targets: [{ src: 'src/assets/*', dest: 'dist/assets/' }],
+    }),
+  ],
 };
