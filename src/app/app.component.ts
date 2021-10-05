@@ -28,7 +28,7 @@ export class App extends ScopedElementsMixin(LitElement) {
           <habeeb-about></habeeb-about>
         </section>
         <section>
-          <h2>Experience</h2>
+          <h2>Career & Education</h2>
           <habeeb-timeline></habeeb-timeline>
         </section>
       </article>
