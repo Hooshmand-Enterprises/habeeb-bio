@@ -59,7 +59,8 @@ export class PapersPatents extends LitElement {
   ];
 
   override render() {
-    return html`<h2>
+    return html`<section>
+      <h2>
         Check out my all my patents and papers on
         <a
           href="https://scholar.google.com/citations?user=iP66x48AAAAJ"
@@ -69,20 +70,25 @@ export class PapersPatents extends LitElement {
         >.
       </h2>
       <section>
-        <h2>A selection of my work:</h2>
+        <h2>A selection of work:</h2>
         <ul>
           ${this.papers.map(
             (paper) =>
               html`<li>
-                <a href="${paper.url}" target="_blank" rel="noopener noreferrer"
-                  >${paper.title}</a
-                >
-                <br />
+                <div class="title">
+                  <a
+                    href="${paper.url}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >${paper.title}</a
+                  >
+                </div>
                 ${paper.year} &mdash; ${unsafeHTML(paper.authors)}
-                <p>${paper.description}</p>
+                <p class="description">${paper.description}</p>
               </li>`
           )}
         </ul>
-      </section> `;
+      </section>
+    </section>`;
   }
 }
