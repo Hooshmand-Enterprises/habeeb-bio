@@ -23,10 +23,14 @@
   "license": "ISC",
   "dependencies": {
     "@open-wc/scoped-elements": "^2.0.0-next.6",
-    "lit": "^2.0.0"
+    "lit": "^2.0.0",
+    "scholarly": "^1.1.0",
+    "senginta": "^0.0.3"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^1.10.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-typescript": "^8.2.5",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "^7.32.0",
