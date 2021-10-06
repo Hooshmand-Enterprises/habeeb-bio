@@ -8,15 +8,25 @@ const capitalOne: Job = {
       start: { label: 'July 2020', date: 'July 1, 2020' },
       end: { label: 'Present', date: null },
       title: 'Software Engineer',
-      description:
-        'Front end lead working in the compliance innovation space. Working on new ways for compliance advisors to easily consume the data they need. Building UIs in Web Components using Lit.',
+      description: `
+      <ul>
+        <li>Front end lead working in the compliance innovation space.</li>
+        <li>Line of business subject matter expert on Web Components.</li>
+        <li>Building new ways for compliance advisors to easily consume the data they need.</li>
+      </ul>`,
     },
     {
       start: { label: 'August 2019', date: 'August 1, 2019' },
       end: { label: 'July 2020', date: 'July, 1 2020' },
       title: 'Associate Software Engineer',
-      description:
-        'Front End Software engineer working on the consumer facing auto-refinancing application and pre-qualification process.',
+      description: `
+      <ul>
+        <li>Front End Software engineer working on 
+          <a href="https://autorefi.capitalone.com" target="_blank" rel="noopener noreferrer"
+            >Auto Refinance</a
+          >.
+        </li>
+      </ul>`,
     },
   ],
 };
@@ -29,8 +39,12 @@ const tamuInfoLab: Job = {
       start: { label: 'January 2017', date: 'January 1, 2017' },
       end: { label: 'May 2019', date: 'May 1, 2019' },
       title: 'Research Assistant',
-      description:
-        'Research Assistant for the Center for the Study of Digital Libraries: InfoLab. Advised by Dr. James Caverlee.',
+      description: `
+        <ul>
+          <li>Research Assistant for the Center for the Study of Digital Libraries: InfoLab.</li>
+          <li>Advised by Dr. James Caverlee.</li>
+          <li>Researched user misbehavior on social media.</li>
+        </ul>`,
     },
   ],
 };
@@ -43,8 +57,12 @@ const education: Job = {
       start: { label: 'August 2015', date: 'August 1, 2015' },
       end: { label: 'May 2019', date: 'May 1, 2019' },
       title: 'Bachelor of Science, Computer Science',
-      description:
-        'I graduated from Texas A&M University Spring 2019 with a BS in Computer Science and a Minor in Economics',
+      description: `
+      <ul>
+        <li>Graduated from Texas A&M University Spring 2019.</li>
+        <li>BS in Computer Science</li> 
+        <li>Minor in Economics</li>
+      </ul>`,
     },
   ],
 };
@@ -57,8 +75,16 @@ const capitalOneInternship: Job = {
       start: { label: 'May 2018', date: 'May 1, 2018' },
       end: { label: 'August 2018', date: 'August 1, 2018' },
       title: 'Data Engineer Intern',
-      description:
-        'During the course of my internship I built a Natural Language Understanding engine for vehicle searching. The system accepts any natural input and recommends vehicles based on the input.',
+      description: `
+      <ul>
+        <li>During the course of my internship I built a Natural Language Understanding engine for vehicle searching.</li>
+        <li>The system accepts any natural input and recommends vehicles based on the input.</li>
+        <li>I wrote a 
+          <a href="https://arxiv.org/pdf/2002.02070.pdf" target="_blank" rel="noopener noreferrer"
+            >paper describing the concept</a
+          >.
+        </li>
+      </ul>`,
     },
   ],
 };
@@ -71,6 +97,7 @@ const blueChasm: Job = {
       start: { label: 'May  2016', date: 'May 1, 2016' },
       end: { label: 'August 2016', date: 'August 1, 2016' },
       title: 'Developer Intern',
+      description: '',
     },
   ],
 };
@@ -83,6 +110,7 @@ const outreachStrategists: Job = {
       start: { label: 'June 2014', date: 'June 1, 2014' },
       end: { label: 'January 2015', date: 'January 1, 2015' },
       title: 'Data Analyst Intern',
+      description: '',
     },
   ],
 };

@@ -9,10 +9,11 @@ export class About extends LitElement {
     return html`
       <section>
         <div>
-          <p>Hi! I'm Habeeb.</p>
+          <p>Hi! I'm <strong>Habeeb</strong>.</p>
 
           <p>
-            I am a Front-end lead in the Compliance Innovation space at
+            I am a <strong>front-end lead</strong> in the Compliance Innovation
+            space at
             <a
               href="https://capitalone.com"
               target="_blank"
@@ -28,11 +29,11 @@ export class About extends LitElement {
               >Lit</a
             >
             (what you're looking at right now), but I have also built UIs in
-            REACT, Angular 2, and Angular JS
+            React, Angular 2, and Angular JS
           </p>
 
           <p>
-            Formerly, I was a Research Assistant at Texas A&M University advised
+            Previously, I was a Research Assistant at Texas A&M University advised
             by
             <a
               href="https://people.engr.tamu.edu/caverlee/index.html"

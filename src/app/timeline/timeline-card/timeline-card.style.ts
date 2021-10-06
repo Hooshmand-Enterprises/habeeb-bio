@@ -1,6 +1,14 @@
 import { css } from 'lit';
 
 export const timelineCardStyle = css`
+  a {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  ul {
+    padding-inline-start: 2em;
+  }
+
   .cd-timeline-content {
     background: #333c42;
     border-radius: 2px;
@@ -94,7 +102,6 @@ export const timelineCardStyle = css`
 
   @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
-      font-size: 1.25rem;
       font-size: 20px;
     }
     .cd-timeline-content p {

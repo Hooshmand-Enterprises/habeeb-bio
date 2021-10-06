@@ -1,5 +1,6 @@
 import { html, LitElement } from 'lit';
 import { classMap } from 'lit/directives/class-map';
+import { unsafeHTML } from 'lit/directives/unsafe-html';
 import { property } from 'lit/decorators';
 import { timelineCardStyle } from './timeline-card.style';
 import { Position } from '../../shared/interfaces/position.interface';
@@ -29,11 +30,11 @@ export class TimelineCard extends LitElement {
                   (${this.timeBetween(start.date, end.date)})</span
                 >
               </section>
-              <p>${description}</p>
+              <p>${unsafeHTML(description)}</p>
             `
         )}
         <ul class="content-skills">
-          ${this.skills.map(skill => html`<li>${skill}</li>`)}
+          ${this.skills.map((skill) => html`<li>${skill}</li>`)}
         </ul>
       </section>
     `;
@@ -53,7 +54,6 @@ export class TimelineCard extends LitElement {
   yearsBetween(start: string | null, end: string | null): number {
     const date1 = start ? new Date(start) : new Date();
     const date2 = end ? new Date(end) : new Date();
-
     const yearsDiff = date2.getFullYear() - date1.getFullYear();
     return yearsDiff;
   }
@@ -61,7 +61,6 @@ export class TimelineCard extends LitElement {
   monthsBetween(start: string | null, end: string | null): number {
     const date1 = start ? new Date(start) : new Date();
     const date2 = end ? new Date(end) : new Date();
-
     const years = this.yearsBetween(start, end);
     const months = years * 12 + (date2.getMonth() - date1.getMonth());
     return months;
