@@ -1,6 +1,6 @@
 {
   "name": "habeeb-bio",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Habeeb's bio app",
   "scripts": {
     "clean": "rimraf dist",
