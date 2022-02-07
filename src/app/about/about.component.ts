@@ -12,15 +12,13 @@ export class About extends LitElement {
           <p>Hi! I'm <strong>Habeeb</strong>.</p>
 
           <p>
-            I am a <strong>front-end lead</strong> in the Compliance Innovation
-            space at
+            I am a Senior Front end developer at
             <a
-              href="https://capitalone.com"
+              href="https://www.self.inc/"
               target="_blank"
               rel="noopener noreferrer"
-              >Capital One</a
-            >. Recently, I've been working on innovative big-data search
-            experiences and tools to to manage data visualization.
+              >Self</a
+            >.
           </p>
 
           <p>
@@ -33,8 +31,8 @@ export class About extends LitElement {
           </p>
 
           <p>
-            Previously, I was a Research Assistant at Texas A&M University advised
-            by
+            Previously, I was a Research Assistant at Texas A&M University
+            advised by
             <a
               href="https://people.engr.tamu.edu/caverlee/index.html"
               target="_blank"
