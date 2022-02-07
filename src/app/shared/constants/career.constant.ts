@@ -1,12 +1,25 @@
 import { Job } from '../interfaces/job.interface';
 
+const self: Job = {
+  institution: 'Self Inc',
+  location: 'Austin, TX',
+  positions: [
+    {
+      title: 'Senior Frontend Software Engineer',
+      start: { label: 'February 2022', date: 'February 28, 2022' },
+      end: { label: 'Present', date: null },
+      description: '',
+    },
+  ],
+};
+
 const capitalOne: Job = {
   institution: 'Capital One',
   location: 'Plano, TX',
   positions: [
     {
       start: { label: 'July 2020', date: 'July 1, 2020' },
-      end: { label: 'Present', date: null },
+      end: { label: 'February 2022', date: 'February 21, 2022' },
       title: 'Software Engineer',
       description: `
       <ul>
@@ -116,6 +129,7 @@ const outreachStrategists: Job = {
 };
 
 export const career: Array<Job> = [
+  self,
   capitalOne,
   education,
   tamuInfoLab,
