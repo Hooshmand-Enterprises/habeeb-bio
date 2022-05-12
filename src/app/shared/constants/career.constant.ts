@@ -1,5 +1,16 @@
 import { Job } from '../interfaces/job.interface';
 
+const hooshmandEnterprises: Job = {
+  institution: 'Hooshmand Enterprises LLC',
+  location: 'Dallas, TX',
+  positions: [{
+    title: 'Founder & CEO',
+    start: { label: 'May 2022', date: 'May 9, 2022' },
+    end: { label: 'Present', date: null },
+    description: '',
+  }]
+}
+
 const self: Job = {
   institution: 'Self Inc',
   location: 'Austin, TX',
@@ -129,6 +140,7 @@ const outreachStrategists: Job = {
 };
 
 export const career: Array<Job> = [
+  hooshmandEnterprises,
   self,
   capitalOne,
   education,

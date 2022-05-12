@@ -22,12 +22,11 @@ export class About extends LitElement {
           </p>
 
           <p>
-            I mostly build UIs in Web Components using
-            <a href="https://lit.dev/" target="_blank" rel="noopener noreferrer"
-              >Lit</a
-            >
-            (what you're looking at right now), but I have also built UIs in
-            React, Angular 2, and Angular JS
+            I am also the founder of <a href="https://hooshmand.enterprises" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</a>. 
+          </p>
+
+          <p>
+            I mostly deal with UIs in JavaScript/React using, but I have also built UIs in, Angular 2, and Angular JS
           </p>
 
           <p>
