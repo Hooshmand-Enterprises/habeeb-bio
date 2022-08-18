@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "@open-wc/scoped-elements": "^2.0.0-next.6",
+    "firebase": "^9.9.3",
     "lit": "^2.0.0",
     "scholarly": "^1.1.0",
     "senginta": "^0.0.3"

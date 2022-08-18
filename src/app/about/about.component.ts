@@ -22,7 +22,7 @@ export class About extends LitElement {
           </p>
 
           <p>
-            I am also the founder of <a href="https://hooshmand.enterprises" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</a>. 
+            I am also the founder of <a href="https://hooshmandenterprises.com" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</a>. 
           </p>
 
           <p>
